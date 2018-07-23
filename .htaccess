@@ -1,0 +1,10 @@
+ErrorDocument 404 /404.html
+# Begin Muse Generated redirects
+# End Muse Generated redirects
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^www.blesklab55.ru [NC]
+
+RewriteRule ^(.*)$ http://blesklab55.ru/$1 [L,R=301]
+AddDefaultCharset utf-8
+AddType 'text/html; charset=utf-8' .html .htm .shtml
