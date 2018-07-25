@@ -6,12 +6,6 @@ body {
   background: #353436;
 }
 
-header {}
-
-h1 h2 h3 {
-  font-family: 'Playfair Display', serif;
-}
-
 div {
   box-sizing: border-box;
 }
@@ -21,8 +15,6 @@ div {
   margin: 0 auto;
   max-height: 100%;
 }
-
-.head {}
 
 .login {
   width: 100%;
@@ -54,19 +46,17 @@ div {
   padding: 0;
 }
 
-.menu ul {
-  list-style: none;
-}
-
 .menu>ul {
   display: flex;
   justify-content: flex-end;
   margin-top: -27px;
+  list-style: none;
 }
 
 .menu>ul li {
   position: relative;
   text-align: left;
+  list-style: none;
 }
 
 .menu>ul li a {
@@ -101,7 +91,7 @@ div {
   top: 28px;
   left: 0px;
   display: none;
-  padding: 0 5px 5px 0;
+  padding: 20px 20px 15px 0px;
   background-color: #353436;
   z-index: 99999;
 }
@@ -117,14 +107,15 @@ div {
 
 .menu-item a {
   padding: 5px 10px;
+  text-align: center;
 }
 
 /* Slider */
 
 #slider {
-  width: 100%;
-  height: 680px;
   position: relative;
+  width: 100%;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -143,20 +134,13 @@ div {
   overflow: hidden;
 }
 
-.slide img {
+.images {
   width: 100%;
   height: 100%;
-}
-
-.slide img {
-  width: 100%;
-  height: 100%;
-}
-
-.images img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  background-image: url(../img/slide1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /* Contents */
@@ -178,6 +162,7 @@ div {
 }
 
 .content-txt h1 {
+  font-family: 'Playfair Display', serif;
   font-size: 30px;
   color: #000;
   text-align: left;
@@ -185,6 +170,7 @@ div {
 }
 
 .content-txt h2 {
+  font-family: 'Playfair Display', serif;
   font-size: 18px;
   font-weight: normal;
   color: #000;
@@ -202,7 +188,6 @@ div {
   bottom: 50px;
   right: 50%;
   padding: 0;
-  z-index: 30;
 }
 
 .switch>ul {
@@ -319,49 +304,15 @@ div {
   }
 }
 
-.hidden {}
-
-.active {
-  /*! visibility: visible; */
-  /*! height: auto; */
-  /*! overflow: none; */
-  /*! opacity: 1; */
-}
-
-.btn_accord {
-  background-color: #fff;
-  width: 90px;
-  height: 30px;
-  border: 1px #000 solid;
-  text-align: center;
-  position: absolute;
-  /*! bottom: 0; */
-  left: 50%;
-  margin-left: -45px;
-  cursor: pointer;
-  top: -30px;
-}
-
-.btn_accord__img {
-  width: 39px;
-  height: 16px;
-  background-image: url(../img/arrows.gif);
-  background-position: 0px -16px;
-  background-repeat: no-repeat;
-  display: inline-block;
-  margin-top: 7px;
-}
-
-.btn_accord__img-open {
-  background-position: 0 0;
-}
-
 /* ------APERTI------ */
 
 .accordeon {
-  position: relative;
-  transform: translate(0, 0);
-  transition: transform 0.3s;
+  position: absolute;
+  transform: translate(0, 100%);
+  transition: transform 0.5s;
+  bottom: 0;
+  left: 50%;
+  margin-left: -600px;
 }
 
 .box_aperti {
@@ -370,15 +321,7 @@ div {
   justify-content: center;
   align-items: center;
   align-content: center;
-  /*! position: absolute; */
-  /*! bottom: 0px; */
-  /*! right: 0; */
   padding: 0;
-  /*! visibility: hidden; */
-  /*! height: 0; */
-  /*! overflow: hidden; */
-  /*! opacity: 0; */
-  /*! transition: all 1s linear; */
 }
 
 .box_aperti_item {
@@ -400,6 +343,43 @@ div {
 
 .box_aperti_item :nth-child(3n) {
   text-align: right;
+}
+
+.accordeon__inner {
+  position: relative;
+  height: 100%;
+}
+
+.accordeon.active {
+  transform: translate(0, 0);
+}
+
+.btn_accord__img-open {}
+
+.btn_accord {
+  background-color: #fff;
+  width: 90px;
+  height: 30px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  margin-left: -45px;
+  cursor: pointer;
+  top: -30px;
+}
+
+.btn_accord__img {
+  width: 39px;
+  height: 16px;
+  background-image: url(../img/arrows.gif);
+  background-position: 0px -16px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-top: 7px;
+}
+
+.btn_accord__img-open {
+  background-position: 0 0;
 }
 
 /* -------footer-------- */
@@ -559,7 +539,7 @@ div {
 }
 
 .modal {
-  position: absolute;
+  position: relative;
 }
 
 .btn {
@@ -632,19 +612,22 @@ div {
   margin-top: 0;
 }
 
-.X {
+.Modal_form {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.Modal_form_admin {
+  margin: 10px 50px 30px 10px;
+}
+
+.Modal_form_reg {
+  margin: 10px 50px 30px 10px;
+}
+
+.close-modal {
   position: absolute;
-  top: -40px;
-  right: -200px;
+  right: 14px;
+  top: 14px;
 }
-
-.accordeon__inner {
-  position: relative;
-  height: 100%;
-}
-
-.accordeon.active {
-  transform: translate(0, -100%);
-}
-
-.btn_accord__img-open {}

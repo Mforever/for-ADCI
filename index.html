@@ -25,56 +25,53 @@
         <![endif]-->
 
   <header>
-    <div class="head container">
-      <div class="login">
-        <a href="#" class="btn open-modal" data-modal="#modal1">AREA RISERVATA
-          <span class="castle"><img src="img/Ogg.png" alt="Замок">
-          </a>
-      </div>
-      <div class="logo">
-        <a href="index.html"><img src="img/logo.png" alt="Лого компании" contextmenu="mmlampadari" class="logo_img sink"></a>
-      </div>
-      <nav class="menu">
-        <ul class="mmenuu">
-          <li class="menu-item">
-            <a href="#">HOME</a>
-          </li>
-          <li class="menu-item">
-            <a href="#">AZIENDA</a>
-            <ul class="ssubmenuu">
-              <li class="menu-item"><a href=#>STORIA<img src="img/menu-LAIN.png" alt="p"></a></li>
-              <li class="menu-item"><a href=#>MM DESIGN<img src="img/menu-LAIN.png" alt="p"></a></li>
-              <li class="menu-item"><a href=#>DESIGNER<img src="img/menu-LAIN.png" alt="p"></a></li>
-              <li class="menu-item"><a href=#>CERTIFICAZIONI</a></li>
-            </ul>
-          </li>
-          <li class="menu-item">
-            <a href="#">COLLEZIONI</a>
-          </li>
-          <li class="menu-item">
-            <a href="#">NEWS</a>
-          </li>
-          <li class="menu-item"><a href="#">CONTATTI</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <!-- Slider -->
     <div id="slider">
+      <div class="container">
+        <div class="login">
+          <a href="#" class="btn open-modal" data-modal="#modal1">AREA RISERVATA
+            <span class="castle"><img src="img/Ogg.png" alt="Замок">
+            </a>
+        </div>
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.png" alt="Лого компании" contextmenu="mmlampadari" class="logo_img sink"></a>
+        </div>
+        <nav class="menu">
+          <ul class="mmenuu">
+            <li class="menu-item">
+              <a href="#">HOME</a>
+            </li>
+            <li class="menu-item">
+              <a href="#">AZIENDA</a>
+              <ul class="ssubmenuu">
+                <li class="menu-item"><a href=#>STORIA<img src="img/menu-LAIN.png" alt="p"></a></li>
+                <li class="menu-item"><a href=#>MM DESIGN<img src="img/menu-LAIN.png" alt="p"></a></li>
+                <li class="menu-item"><a href=#>DESIGNER<img src="img/menu-LAIN.png" alt="p"></a></li>
+                <li class="menu-item"><a href=#>CERTIFICAZIONI</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="#">COLLEZIONI</a>
+            </li>
+            <li class="menu-item">
+              <a href="#">NEWS</a>
+            </li>
+            <li class="menu-item"><a href="#">CONTATTI</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
       <div class="slides">
-        <!-- First slide -->
         <div class="slider">
           <div class="content">
             <div class="content-txt">
               <h1> Lampadari contemporanei </h1>
               <h2> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </h2>
             </div>
-          </div>
-          <div class="images">
-            <img src="img/slide1.png">
+            <div class="images">
+            </div>
           </div>
         </div>
-        <!-- Second slide -->
         <div class="slider">
           <div class="content">
             <div class="content-txt">
@@ -83,10 +80,8 @@
             </div>
           </div>
           <div class="images">
-            <img src="img/slide1.png">
           </div>
         </div>
-        <!-- Third slide -->
         <div class="slider">
           <div class="content">
             <div class="content-txt">
@@ -95,7 +90,6 @@
             </div>
           </div>
           <div class="images">
-            <img src="img/slide1.png">
           </div>
         </div>
       </div>
@@ -108,7 +102,7 @@
           <li></li>
         </ul>
       </div>
-      <div class="accordeon">
+      <div class="accordeon container">
         <div class="accordeon__inner">
           <div class="box_aperti">
             <div class="box_aperti_item">
@@ -127,12 +121,11 @@
               <p>sdajdssdksdds</p>
             </div>
           </div>
-          <div class="head btn_accord">
+          <div class="btn_accord">
             <div class="btn_accord__img">
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </header>
@@ -199,26 +192,53 @@
     <div>
     </div>
   </footer>
-
   <div class='modal' id='modal1'>
     <div class='content'>
       <h1 class='title'>AREA RISERVATA</h1>
-      <form class="form_footer" action="#" method="post" name="form">
-        <div>
-          <input class="form_footer-inp" name="name" type="text" placeholder="Nome e Cognome" />
+      <div class="Modal_form">
+        <div class="Modal_form_admin">
+          <h2>ACCEDI</h2>
+          <form class="form_footer" action="#" method="post" name="form">
+            <div>
+              <input class="form_footer-inp" name="name" type="text" placeholder="Nome e Cognome" />
+            </div>
+            <div>
+              <input class="form_footer-inp" name="email" type="text" placeholder="Email" />
+            </div>
+            <bottom class="form_btn">ISCRIVITI</bottom>
+          </form>
         </div>
-        <div>
-          <input class="form_footer-inp" name="email" type="text" placeholder="Email" />
-        </div>
-        <div class="form_footer-chec">
-          <input type="checkbox" name="pl" value="">
-          <span class="ch">Acconsento al trattamento dei dati</span>
-        </div>
-        <bottom class="form_btn">ISCRIVITI</bottom>
-      </form>
-      <a class='btn close-modal X' data-modal="#modal1" href="#">X</a>
+        <for<div class="Modal_form_reg">
+          <h2>REGISTRATI</h2>
+          <form class="form_footer" action="#" method="post" name="form">
+            <div>
+              <input class="form_footer-inp" name="name" type="text" placeholder="Nome e Cognome" />
+            </div>
+            <div>
+              <input class="form_footer-inp" name="email" type="text" placeholder="Email" />
+            </div>
+            <div>
+              <input class="form_footer-inp" name="email" type="text" placeholder="Email" />
+            </div>
+            <div>
+              <input class="form_footer-inp" name="email" type="text" placeholder="Email" />
+            </div>
+            <div class="form_footer-chec">
+              <input type="checkbox" name="pl" value="">
+              <span class="ch">Acconsento al trattamento dei dati</span>
+            </div>
+            <div class="form_footer-chec">
+              <input type="checkbox" name="pl" value="">
+              <span class="ch">Acconsento al trattamento dei dati</span>
+            </div>
+            <bottom class="form_btn">ISCRIVITI</bottom>
+          </form>
+      </div>
+
     </div>
+    <a class='btn close-modal' data-modal="#modal1" href="#">X</a>
   </div>
+
   <script>
     window.ga = function() {
       ga.q.push(arguments)
