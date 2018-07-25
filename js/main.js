@@ -45,9 +45,8 @@ $(".close-modal").on('click', function(e){
 });
 
 $(document).ready(function() {
-	$('#accordeon .head').on('click', my_func);
+	$('.btn_accord').on('click', function (){
+	    $(this).closest(".accordeon").toggleClass("active");
+			$(this).find(".btn_accord__img").toggleClass("btn_accord__img-open")
+	});
 });
-function my_func(){
-    $('#accordeon .hidden').not($(this).next());
-    $(this).next().toggleClass("active");
-}
